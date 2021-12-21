@@ -1,0 +1,53 @@
+<%- include('partials/header') -%>
+
+<div class="container mt-4">
+    <div class="card mx-auto bg-transparent">
+        <div class="card-header pd-0 bg-transparent">
+            <div class="navbar navbar-expand">
+                <li class="navbar-nav me-auto align-items-center">
+                    <div class="navbar-brand">
+                        <img src="img/DarkChapLogo.png" alt="Chap logo" style="height: 3rem;">
+                    </div>
+                    <h2>chap</h2>
+                </li>
+                <li class="navbar-nav ms-auto">
+                    <a href="/"><button class="btn btn-dark chap-button">Take your leave</button></a>
+                </li>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <div class="row m-0 p-0 w-100 h-100">
+                <div class="col-3 p-2 sidebar">
+                    <!-- sidebar column -->
+                    <p class="menu-title">Rooms</p>
+                    <p>General</p>
+                    <p>Artwork</p>
+                    <p class="menu-title">Users</p>
+                    <p>Bradley</p>
+                    <p>Flint</p>
+                    <p>Gertrude</p>
+                </div>
+                <div class="col-9" style="max-height: 100%;">
+
+                    <div id="chatWindow" class="container-fluid chatWindow">
+                        <!-- message component -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center align-items-center">Hello World</div>
+            <div class=" col-sm-12 col-md-9">
+                <div class="d-flex p-2 justify-content-end">
+                    <textarea id="chapInput" class="form-control chap-input" rows="1"></textarea>
+                    <button id="chapSendButton" class="btn btn-dark chap-button">-></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/chatclient.js"></script>
+<script type="text/javascript" src="js/date.js"></script>
+
+<%- include('partials/footer') -%>

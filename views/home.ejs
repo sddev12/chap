@@ -1,0 +1,32 @@
+<%- include('partials/header') -%>
+
+<div class="container d-flex flex-column justify-content-center homeContainer">
+    <div class="row">
+        <div class="col d-flex justify-content-end">
+            <img class="logo" src="/img/DarkChapLogo.png" alt="">
+        </div>
+        <div class="col d-flex flex-column justify-content-center">
+            <h1>chap</h1>
+            <div class="d-flex">
+                <form action="/chat">
+                    <input name="user" type="text" class="form-control usernameInput"  placeholder="select username">
+                    <button type="submit" class="btn btn-dark joinButton">Join</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/chatclient.js"></script>
+
+<%- include('partials/footer') -%>
